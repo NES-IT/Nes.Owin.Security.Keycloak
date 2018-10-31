@@ -1,4 +1,4 @@
-﻿namespace Keycloak.IdentityModel
+﻿namespace Nes.IdentityModel.Keycloak
 {
 	public static class Constants
 	{

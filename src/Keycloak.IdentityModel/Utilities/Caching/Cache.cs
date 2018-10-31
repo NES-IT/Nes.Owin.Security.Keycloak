@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Web;
 
-namespace Keycloak.IdentityModel.Utilities.Caching
+namespace Nes.IdentityModel.Keycloak.Utilities.Caching
 {
     public abstract class Cache
     {

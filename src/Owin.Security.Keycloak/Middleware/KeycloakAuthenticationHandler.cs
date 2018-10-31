@@ -7,13 +7,13 @@ using System.Net;
 using System.Security.Authentication;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Keycloak.IdentityModel;
-using Keycloak.IdentityModel.Models.Responses;
+using Nes.IdentityModel.Keycloak;
+using Nes.IdentityModel.Keycloak.Models.Responses;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Infrastructure;
 
-namespace Owin.Security.Keycloak.Middleware
+namespace Nes.Owin.Security.Keycloak.Middleware
 {
     internal class KeycloakAuthenticationHandler : AuthenticationHandler<KeycloakAuthenticationOptions>
     {

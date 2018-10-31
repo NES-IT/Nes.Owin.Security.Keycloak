@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using Microsoft.IdentityModel.Protocols;
 
-namespace Keycloak.IdentityModel.Models.Responses
+namespace Nes.IdentityModel.Keycloak.Models.Responses
 {
     public abstract class OidcResponse
     {

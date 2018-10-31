@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Keycloak.IdentityModel.Models.Configuration;
-using Keycloak.IdentityModel.Models.Responses;
-using Keycloak.IdentityModel.Utilities;
+using Nes.IdentityModel.Keycloak.Models.Configuration;
+using Nes.IdentityModel.Keycloak.Models.Responses;
+using Nes.IdentityModel.Keycloak.Utilities;
 
-namespace Keycloak.IdentityModel.Models.Messages
+namespace Nes.IdentityModel.Keycloak.Models.Messages
 {
     public class RefreshAccessTokenMessage : GenericMessage<TokenResponse>
     {

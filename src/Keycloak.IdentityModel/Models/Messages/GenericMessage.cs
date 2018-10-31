@@ -3,9 +3,9 @@ using System.Net;
 using System.Net.Http;
 using System.Security.Authentication;
 using System.Threading.Tasks;
-using Keycloak.IdentityModel.Models.Configuration;
+using Nes.IdentityModel.Keycloak.Models.Configuration;
 
-namespace Keycloak.IdentityModel.Models.Messages
+namespace Nes.IdentityModel.Keycloak.Models.Messages
 {
     public abstract class GenericMessage<T>
     {

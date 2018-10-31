@@ -1,8 +1,8 @@
 ﻿using System;
-using Keycloak.IdentityModel.Models.Configuration;
+using Nes.IdentityModel.Keycloak.Models.Configuration;
 using Microsoft.Owin.Security;
 
-namespace Owin.Security.Keycloak
+namespace Nes.Owin.Security.Keycloak
 {
     public class KeycloakAuthenticationOptions : AuthenticationOptions, IKeycloakParameters
     {

@@ -1,4 +1,4 @@
-﻿using Keycloak.IdentityModel.Models.Configuration;
+﻿using Nes.IdentityModel.Keycloak.Models.Configuration;
 using Microsoft.IdentityModel;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -8,7 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Keycloak.IdentityModel.Utilities
+namespace Nes.IdentityModel.Keycloak.Utilities
 {
 	internal class KeycloakTokenHandler : JwtSecurityTokenHandler
 	{

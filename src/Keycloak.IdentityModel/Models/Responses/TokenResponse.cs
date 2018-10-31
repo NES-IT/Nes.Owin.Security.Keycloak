@@ -2,7 +2,7 @@
 using Microsoft.IdentityModel.Protocols;
 using Newtonsoft.Json.Linq;
 
-namespace Keycloak.IdentityModel.Models.Responses
+namespace Nes.IdentityModel.Keycloak.Models.Responses
 {
     public class TokenResponse : OidcResponse
     {

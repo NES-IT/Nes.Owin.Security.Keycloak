@@ -2,7 +2,7 @@
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
-using Owin.Security.Keycloak;
+using Nes.Owin.Security.Keycloak;
 using System;
 
 [assembly: OwinStartup(typeof(SampleWebApp.Startup))]

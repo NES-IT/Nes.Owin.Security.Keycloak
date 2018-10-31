@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Keycloak.IdentityModel.Extensions
+namespace Nes.IdentityModel.Keycloak.Extensions
 {
     internal static class DateTimeExtension
     {

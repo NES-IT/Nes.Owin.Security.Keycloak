@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Keycloak.IdentityModel.Utilities.Caching
+namespace Nes.IdentityModel.Keycloak.Utilities.Caching
 {
     public class StateCache : Cache
     {

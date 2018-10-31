@@ -1,10 +1,11 @@
 ﻿using System;
-using Keycloak.IdentityModel;
+using Nes.IdentityModel.Keycloak;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Infrastructure;
+using Owin;
 
-namespace Owin.Security.Keycloak.Middleware
+namespace Nes.Owin.Security.Keycloak.Middleware
 {
     internal class KeycloakAuthenticationMiddleware : AuthenticationMiddleware<KeycloakAuthenticationOptions>
     {

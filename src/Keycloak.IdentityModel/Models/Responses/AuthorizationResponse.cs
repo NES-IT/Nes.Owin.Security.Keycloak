@@ -3,7 +3,7 @@ using System.Collections.Specialized;
 using System.Web;
 using Microsoft.IdentityModel.Protocols;
 
-namespace Keycloak.IdentityModel.Models.Responses
+namespace Nes.IdentityModel.Keycloak.Models.Responses
 {
     public class AuthorizationResponse : OidcResponse
     {

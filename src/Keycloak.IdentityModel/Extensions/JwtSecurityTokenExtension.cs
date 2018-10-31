@@ -2,7 +2,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Keycloak.IdentityModel.Extensions
+namespace Nes.IdentityModel.Keycloak.Extensions
 {
     internal static class JwtSecurityTokenExtension
     {

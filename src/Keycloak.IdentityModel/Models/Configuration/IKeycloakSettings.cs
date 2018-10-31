@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Keycloak.IdentityModel.Models.Configuration
+namespace Nes.IdentityModel.Keycloak.Models.Configuration
 {
     public interface IKeycloakParameters
     {

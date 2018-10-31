@@ -8,16 +8,16 @@ using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading;
 using System.Threading.Tasks;
-using Keycloak.IdentityModel.Extensions;
-using Keycloak.IdentityModel.Models.Configuration;
-using Keycloak.IdentityModel.Models.Messages;
-using Keycloak.IdentityModel.Models.Responses;
-using Keycloak.IdentityModel.Utilities;
-using Keycloak.IdentityModel.Utilities.ClaimMapping;
+using Nes.IdentityModel.Keycloak.Extensions;
+using Nes.IdentityModel.Keycloak.Models.Configuration;
+using Nes.IdentityModel.Keycloak.Models.Messages;
+using Nes.IdentityModel.Keycloak.Models.Responses;
+using Nes.IdentityModel.Keycloak.Utilities;
+using Nes.IdentityModel.Keycloak.Utilities.ClaimMapping;
 using Newtonsoft.Json.Linq;
 using System.IdentityModel.Tokens.Jwt;
 
-namespace Keycloak.IdentityModel
+namespace Nes.IdentityModel.Keycloak
 {
 	public class KeycloakIdentity : ClaimsIdentity, IIdentity
 	{

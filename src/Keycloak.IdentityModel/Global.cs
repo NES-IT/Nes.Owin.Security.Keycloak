@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Keycloak.IdentityModel
+namespace Nes.IdentityModel.Keycloak
 {
     public static class Global
     {

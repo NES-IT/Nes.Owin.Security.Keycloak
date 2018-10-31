@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Owin.Security.Keycloak-3</id>
+    <id>Nes.Owin.Security.Keycloak</id>
     <version>$FileVersion$</version>
-    <title>Owin.Security.Keycloak-3</title>
-    <authors>Matt Morgan</authors>
-    <owners>Matt Morgan</owners>
-    <licenseUrl>https://github.com/mattmorg55/Owin.Security.Keycloak/blob/master/LICENSE.md</licenseUrl>
-    <projectUrl>https://github.com/mattmorg55/Owin.Security.Keycloak</projectUrl>
-    <iconUrl>https://github.com/mattmorg55/Owin.Security.Keycloak/master/content/keycloak_icon.png</iconUrl>
+    <title>Nes.Owin.Security.Keycloak</title>
+    <authors>Nico Luisetto</authors>
+    <owners>NES</owners>
+    <licenseUrl>https://github.com/NES-IT/Nes.Owin.Security.Keycloak/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/NES-IT/Nes.Owin.Security.Keycloak</projectUrl>
+    <iconUrl>https://github.com/NES-IT/Nes.Owin.Security.Keycloak/blob/master/content/keycloak_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Microsoft.Owin 3.1 Authentication Middleware for JBoss Keycloak 3.2</description>
     <releaseNotes>See https://github.com/mattmorg55/Owin.Security.Keycloak/releases</releaseNotes>
-    <copyright>Copyright 2017</copyright>
+    <copyright>Copyright 2017 Dylan Plecki</copyright>
     <tags>keycloak identitymodel identity owin microsoft authentication aspnet5</tags>
 		<dependencies>
 			<dependency id="Microsoft.IdentityModel.Logging" version="1.1.4" />
@@ -26,11 +26,11 @@
 		</dependencies>
   </metadata>
 	<files>
-		<file src="bin\$configuration$\Keycloak.IdentityModel.dll" target="lib\net45" />
-		<file src="bin\$configuration$\Keycloak.IdentityModel.dll.config" target="lib\net45" />
-		<file src="bin\$configuration$\Keycloak.IdentityModel.pdb" target="lib\net45" />
-		<file src="bin\$configuration$\Owin.Security.Keycloak.dll" target="lib\net45" />
-		<file src="bin\$configuration$\Owin.Security.Keycloak.dll.config" target="lib\net45" />
-		<file src="bin\$configuration$\Owin.Security.Keycloak.pdb" target="lib\net45" />
+		<file src="bin\$configuration$\Nes.IdentityModel.Keycloak.dll" target="lib\net45" />
+		<file src="bin\$configuration$\Nes.IdentityModel.Keycloak.dll.config" target="lib\net45" />
+		<file src="bin\$configuration$\Nes.IdentityModel.Keycloak.pdb" target="lib\net45" />
+		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.dll" target="lib\net45" />
+		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.dll.config" target="lib\net45" />
+		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.pdb" target="lib\net45" />
 	</files>
 </package>

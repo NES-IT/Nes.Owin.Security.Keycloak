@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Keycloak.IdentityModel.Models.Configuration;
-using Keycloak.IdentityModel.Utilities.Synchronization;
+using Nes.IdentityModel.Keycloak.Models.Configuration;
+using Nes.IdentityModel.Keycloak.Utilities.Synchronization;
 using Protocols = Microsoft.IdentityModel.Protocols;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Keycloak.IdentityModel.Utilities
+namespace Nes.IdentityModel.Keycloak.Utilities
 {
     public class OidcDataManager
     {

@@ -3,7 +3,7 @@ using System.Linq;
 using System.Security.Claims;
 using Newtonsoft.Json.Linq;
 
-namespace Keycloak.IdentityModel.Utilities.ClaimMapping
+namespace Nes.IdentityModel.Keycloak.Utilities.ClaimMapping
 {
     internal class ClaimLookup
     {

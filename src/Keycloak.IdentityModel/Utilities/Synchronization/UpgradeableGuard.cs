@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Keycloak.IdentityModel.Utilities.Synchronization
+namespace Nes.IdentityModel.Keycloak.Utilities.Synchronization
 {
     public class UpgradeableGuard : IDisposable
     {
