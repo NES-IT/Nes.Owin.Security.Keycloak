@@ -1,14 +1,9 @@
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyDescription("Microsoft.Owin 3.1 Authentication Middleware for JBoss Keycloak 3.2")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
+[assembly: AssemblyDescription("Middleware that enable OWIN based server to rely on Keycloak server for authentication through OpenID Connect protocol")]
+[assembly: AssemblyCompany("NES")]
+[assembly: AssemblyCopyright("Copyright 2017 Dylan Plecki")]
 [assembly: ComVisible(false)]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("3.0.3.0")]
+[assembly: AssemblyVersion("0.0.1.0")]
+[assembly: AssemblyFileVersion("0.0.1.0")]

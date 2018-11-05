@@ -1,5 +1,5 @@
 ﻿using System.Collections.Concurrent;
-using Nes.IdentityModel.Keycloak.Utilities.Caching;
+using Nes.Keycloak.IdentityModel.Utilities.Caching;
 
 namespace Nes.Owin.Security.Keycloak
 {

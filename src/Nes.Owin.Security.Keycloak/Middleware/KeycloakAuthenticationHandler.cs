@@ -7,8 +7,9 @@ using System.Net;
 using System.Security.Authentication;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Nes.IdentityModel.Keycloak;
-using Nes.IdentityModel.Keycloak.Models.Responses;
+using Microsoft.IdentityModel.Tokens;
+using Nes.Keycloak.IdentityModel;
+using Nes.Keycloak.IdentityModel.Models.Responses;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Infrastructure;
@@ -36,29 +37,37 @@ namespace Nes.Owin.Security.Keycloak.Middleware
                             SignInAsAuthentication(identity, null, Options.SignInAsAuthenticationType);
                             return new AuthenticationTicket(identity, new AuthenticationProperties());
                         }
-                        catch (Exception)
-                        {
-                            // ignored
-                        }
+                        catch (SecurityTokenExpiredException)
+                        {}
                     }
                 }
 
                 // If bearer token auth is forced, skip standard auth
-                if (Options.ForceBearerTokenAuth) return null;
+                //if (Options.ForceBearerTokenAuth) return null;
             }
-
+            
+            //return new AuthenticationTicket(ClaimsIdentity.);
             return null;
         }
 
         public override async Task<bool> InvokeAsync()
         {
             // Check SignInAs identity for authentication update
-            if (Context.Authentication.User.Identity.IsAuthenticated)
-                await ValidateSignInAsIdentities();
+            if (Context.Authentication.User != null && Context.Authentication.User.Identity.IsAuthenticated)
+            {
+                try
+                {
+                    await ValidateSignInAsIdentities();
+                }
+                catch (SecurityTokenExpiredException)
+                {
+                    return false;
+                }
+            }
 
             // Check for valid callback URI
             var callbackUri = await KeycloakIdentity.GenerateLoginCallbackUriAsync(Options, Request.Uri);
-            if (!Options.ForceBearerTokenAuth && Request.Uri.GetLeftPart(UriPartial.Path) == callbackUri.ToString())
+            if (!Options.ForceBearerTokenAuth && Request.Uri.GetLeftPart(UriPartial.Path) == callbackUri.ToString() && Context.Authentication.User != null)
             {
                 // Create authorization result from query
                 var authResult = new AuthorizationResponse(Request.Uri.Query);
@@ -120,10 +129,11 @@ namespace Nes.Owin.Security.Keycloak.Middleware
                 // If bearer token auth is forced, keep returned 401
                 if (Options.ForceBearerTokenAuth)
                 {
-                    await
-                        GenerateUnauthorizedResponseAsync(
-                            "Access Unauthorized: Requires valid bearer token authorization header");
                     return;
+                    //await
+                    //    GenerateUnauthorizedResponseAsync(
+                    //        "Access Unauthorized: Requires valid bearer token authorization header");
+                    //return;
                 }
 
                 var challenge = Helper.LookupChallenge(Options.AuthenticationType, Options.AuthenticationMode);
@@ -198,8 +208,9 @@ namespace Nes.Owin.Security.Keycloak.Middleware
                     Context.Authentication.SignOut(origIdentity.AuthenticationType);
                 }
                 // ReSharper disable once RedundantCatchClause
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    Console.Write(ex.ToString());
                     // TODO: Some kind of exception logging, maybe log the user out
                     throw;
                 }
@@ -221,10 +232,12 @@ namespace Nes.Owin.Security.Keycloak.Middleware
             string reasonPhrase, string errorMessage)
         {
             // Generate error response
-            var task = response.WriteAsync(errorMessage);
+            response.ContentLength = 3;
             response.StatusCode = (int) statusCode;
             response.ReasonPhrase = reasonPhrase;
             response.ContentType = "text/plain";
+            var task = response.WriteAsync(errorMessage);
+
             await task;
         }
 

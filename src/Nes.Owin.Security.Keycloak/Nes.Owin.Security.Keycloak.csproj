@@ -61,7 +61,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Owin.Security.Keycloak.nuspec" />
+    <None Include="Nes.Owin.Security.Keycloak - Copia.nuspec" />
+    <None Include="Nes.Owin.Security.Keycloak.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -129,9 +130,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Keycloak.IdentityModel\Nes.IdentityModel.Keycloak.csproj">
+    <ProjectReference Include="..\Nes.Keycloak.IdentityModel\Nes.Keycloak.IdentityModel.csproj">
       <Project>{fa6dddd7-366a-4012-acf2-252c599f80c0}</Project>
-      <Name>Nes.IdentityModel.Keycloak</Name>
+      <Name>Nes.Keycloak.IdentityModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

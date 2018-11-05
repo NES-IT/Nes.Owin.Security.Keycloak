@@ -264,16 +264,6 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Keycloak.IdentityModel\Nes.IdentityModel.Keycloak.csproj">
-      <Project>{fa6dddd7-366a-4012-acf2-252c599f80c0}</Project>
-      <Name>Nes.IdentityModel.Keycloak</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Owin.Security.Keycloak\Nes.Owin.Security.Keycloak.csproj">
-      <Project>{16edd97e-727a-4366-bf79-629295a162d1}</Project>
-      <Name>Nes.Owin.Security.Keycloak</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
@@ -283,6 +273,12 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nes.Owin.Security.Keycloak\Nes.Owin.Security.Keycloak.csproj">
+      <Project>{16edd97e-727a-4366-bf79-629295a162d1}</Project>
+      <Name>Nes.Owin.Security.Keycloak</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

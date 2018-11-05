@@ -1,5 +1,5 @@
 ﻿using System;
-using Nes.IdentityModel.Keycloak;
+using Nes.Keycloak.IdentityModel;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Infrastructure;

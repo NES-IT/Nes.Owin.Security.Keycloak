@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nes.Owin.Security.Keycloak", "Nes.Owin.Security.Keycloak\Nes.Owin.Security.Keycloak.csproj", "{16EDD97E-727A-4366-BF79-629295A162D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nes.IdentityModel.Keycloak", "Nes.IdentityModel.Keycloak\Nes.IdentityModel.Keycloak.csproj", "{FA6DDDD7-366A-4012-ACF2-252C599F80C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nes.Keycloak.IdentityModel", "Nes.Keycloak.IdentityModel\Nes.Keycloak.IdentityModel.csproj", "{FA6DDDD7-366A-4012-ACF2-252C599F80C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{EC3D07A6-5CD9-40F6-BB1F-F25B22B34E68}"
 	ProjectSection(SolutionItems) = preProject

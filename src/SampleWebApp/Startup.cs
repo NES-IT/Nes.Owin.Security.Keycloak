@@ -2,8 +2,8 @@
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
-using Nes.Owin.Security.Keycloak;
 using System;
+using Nes.Owin.Security.Keycloak;
 
 [assembly: OwinStartup(typeof(SampleWebApp.Startup))]
 namespace SampleWebApp
