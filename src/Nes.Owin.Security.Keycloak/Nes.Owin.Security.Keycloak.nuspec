@@ -11,7 +11,7 @@
     <iconUrl>https://github.com/NES-IT/Nes.Owin.Security.Keycloak/blob/master/content/keycloak_icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Middleware that enable OWIN based server to rely on Keycloak server for authentication through OpenID Connect protocol</description>
-    <releaseNotes>See https://github.com/mattmorg55/Owin.Security.Keycloak/releases</releaseNotes>
+    <releaseNotes>See https://github.com/NES-IT/Nes.Owin.Security.Keycloak/releases </releaseNotes>
     <copyright>Copyright 2017 Dylan Plecki</copyright>
     <tags>keycloak oidc openid openidconnect identity owin microsoft authentication middleware aspnet webapi</tags>
 		<dependencies>
@@ -26,11 +26,11 @@
 		</dependencies>
   </metadata>
 	<files>
-		<file src="bin\$configuration$\Nes.Keycloak.IdentityModel.dll" target="lib\net472" />
-		<file src="bin\$configuration$\Nes.Keycloak.IdentityModel.dll.config" target="lib\net472" />
-		<file src="bin\$configuration$\Nes.Keycloak.IdentityModel.pdb" target="lib\net472" />
-		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.dll" target="lib\net472" />
-		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.dll.config" target="lib\net472" />
-		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.pdb" target="lib\net472" />
+		<file src="bin\$configuration$\Nes.Keycloak.IdentityModel.dll" target="lib\net461" />
+		<file src="bin\$configuration$\Nes.Keycloak.IdentityModel.dll.config" target="lib\net461" />
+		<file src="bin\$configuration$\Nes.Keycloak.IdentityModel.pdb" target="lib\net461" />
+		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.dll" target="lib\net461" />
+		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.dll.config" target="lib\net461" />
+		<file src="bin\$configuration$\Nes.Owin.Security.Keycloak.pdb" target="lib\net461" />
 	</files>
 </package>
